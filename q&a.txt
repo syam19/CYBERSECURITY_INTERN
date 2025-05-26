@@ -1,0 +1,47 @@
+Networking Assignment - Nmap Scanning
+
+Q1. Install Nmap from the official website.
+A1. Nmap was installed successfully. Verified by running the command:
+    Command: nmap -v
+    (Refer to screenshot: fa512934-8ba2-45e9-8d5d-3362de15b97c.png)
+
+Q2. Find your local IP range (e.g., 192.168.1.0/24).
+A2. The local IP range was identified using:
+    Command: ipconfig (Windows) or ifconfig/ip a (Linux)
+    (Refer to screenshot: 554b318a-2e81-4608-87fa-9c228a91a65c.png)
+
+Q3. Run: nmap -sS 192.168.1.0/24 to perform TCP SYN scan.
+A3. TCP SYN scan performed using:
+    Command: nmap -sS 192.168.1.0/24
+    (Refer to screenshot: 9e9e686d-49db-4c8c-aee1-d5437505abfe.png)
+
+Q4. Note down IP addresses and open ports found.
+A4. Based on the scan results, the following devices and open ports were found:
+    - Host: 192.168.1.1 | Ports: 80/tcp (HTTP), 443/tcp (HTTPS)
+    - Host: 192.168.1.5 | Ports: 22/tcp (SSH)
+    - Host: 192.168.1.10 | Ports: 139/tcp, 445/tcp (SMB)
+    (Refer to screenshot: effef5fa-0e21-478d-ae22-8d5a0bc27e43.png)
+
+Q5. Optionally analyze packet capture with Wireshark.
+A5. Wireshark was used to inspect TCP SYN packets generated during the scan.
+    (Refer to screenshot: 46df95e0-c9be-4250-bf2b-b20a721e49a5.png)
+
+Q6. Research common services running on those ports.
+A6. Common services:
+    - Port 80: HTTP - Used for web traffic
+    - Port 443: HTTPS - Secure web traffic
+    - Port 22: SSH - Secure Shell for remote login
+    - Port 139/445: SMB - File and printer sharing
+
+Q7. Identify potential security risks from open ports.
+A7. Risks:
+    - Open port 22 (SSH) can be brute-forced if not secured.
+    - Open SMB ports (139, 445) may lead to exploitation (e.g., EternalBlue).
+    - HTTP without HTTPS may leak data.
+
+Q8. Save scan results as a text or HTML file.
+A8. Scan results were saved using:
+    Command: nmap -sS 192.168.1.0/24 -oN scan_results.txt
+    (Refer to screenshot: 37b3634d-7497-4de5-bc73-e248fc2602d9.png)
+
+All screenshots are referenced and included under /screenshots directory.
