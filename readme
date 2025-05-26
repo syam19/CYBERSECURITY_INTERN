@@ -1,0 +1,15 @@
+README - Networking Assignment Submission
+
+This repository contains the submission for the Nmap scanning assignment.
+
+Files Included:
+1. Networking_Assignment_QA.txt - Contains answers to all questions based on practical execution.
+2. Screenshots (see /screenshots folder) - Visual proof of commands and results.
+3. README.txt - This file.
+
+Instructions:
+- Review the QA file for step-by-step procedure and results.
+- Use the screenshots for evidence of Nmap execution.
+- For scan results, refer to the screenshot and QA details.
+
+Prepared by: Syam
