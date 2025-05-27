@@ -1,0 +1,62 @@
+1. Sample Phishing Email
+------------------------
+From: "PayPal Security" <support@paypalsecurity-alerts.com>
+Subject: Immediate Action Required: Account Access Limited
+
+Dear Customer,
+
+We noticed suspicious activity in your PayPal account. For your protection, we’ve temporarily limited access. Please confirm your identity to restore full access.
+
+Click the link below to proceed:
+https://paypal.alert-verifyuser.com
+
+Failure to act within 24 hours will result in permanent suspension.
+
+Sincerely,
+PayPal Security Team
+
+
+2. Sender’s Email Address – Spoofing Check
+------------------------------------------
+Actual email address: support@paypalsecurity-alerts.com
+Issue: Not an official PayPal domain (should be paypal.com). It’s a spoofed domain meant to deceive users.
+
+3. Email Header Discrepancies (via Online Analyzer)
+----------------------------------------------------
+Indicators found in typical phishing headers:
+- SPF Fail (email not sent from authorized domain)
+- Return-Path differs from “From” address
+- Message sent via suspicious 3rd-party SMTP servers
+
+4. Suspicious Links or Attachments
+----------------------------------
+Link in email: https://paypal.alert-verifyuser.com
+Issue: Non-official domain mimicking PayPal. May lead to a fake login page.
+No attachments, but phishing emails often contain PDFs or .zip malware.
+
+5. Urgent/Threatening Language
+------------------------------
+Examples from email:
+- “Immediate Action Required”
+- “Failure to act within 24 hours will result in permanent suspension”
+Issue: Creates panic and urgency to bypass rational thinking.
+
+6. Mismatched URLs
+------------------
+Displayed text: “Click the link below to proceed”
+Actual URL (on hover): https://paypal.alert-verifyuser.com
+Issue: Fake domain does not match PayPal’s official domain.
+
+7. Spelling or Grammar Errors
+-----------------------------
+Error: “Failure to act within 24 hours will result in permanent suspension.” – slightly awkward phrasing.
+No major typos, but minor unnatural language is suspicious.
+
+8. Summary: Phishing Traits
+----------------------------
+- Spoofed email address (non-PayPal domain)
+- Link to fake website mimicking PayPal
+- Urgent, threatening language to pressure the user
+- Mismatched URL text vs real link
+- Slight grammatical awkwardness
+- Suspicious sending domain and header inconsistencies
