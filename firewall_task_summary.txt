@@ -1,0 +1,53 @@
+Firewall Configuration Task - Cybersecurity Internship
+======================================================
+
+System: Kali Linux
+Firewall Tool: UFW (Uncomplicated Firewall)
+
+------------------------------------------------------
+STEP-BY-STEP TASK SUMMARY
+------------------------------------------------------
+
+1. Open firewall configuration tool
+   - Command: sudo ufw status verbose
+
+2. List current firewall rules
+   - Command: sudo ufw status numbered
+
+3. Add rule to block inbound traffic on port 23 (Telnet)
+   - Command: sudo ufw deny 23/tcp
+
+4. Test the rule by attempting to connect to that port
+   - Installed telnet: sudo apt install telnet
+   - Test: telnet localhost 23
+   - Result: Connection refused (blocked successfully)
+
+5. Allow SSH (port 22) if on Linux
+   - Command: sudo ufw allow 22/tcp
+
+6. Remove the test block rule
+   - Listed rules: sudo ufw status numbered
+   - Removed rule: sudo ufw delete <rule-number>
+
+7. Document commands used
+   Commands used:
+     sudo apt update
+     sudo apt install ufw
+     sudo ufw allow 22/tcp
+     sudo ufw enable
+     sudo ufw deny 23/tcp
+     sudo apt install telnet
+     telnet localhost 23
+     sudo ufw status numbered
+     sudo ufw delete <rule-number>
+
+8. Summarize how firewall filters traffic
+   Firewalls inspect network traffic and apply rules based on:
+   - Port numbers (e.g., 23 for Telnet, 22 for SSH)
+   - Direction (inbound/outbound)
+   - Protocol (TCP/UDP)
+   - Source/Destination IPs (optional)
+   UFW simplifies iptables management, allowing clear, easy firewall rule setup.
+
+------------------------------------------------------
+All 8 steps completed successfully.
