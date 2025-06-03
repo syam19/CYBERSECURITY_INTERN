@@ -1,0 +1,23 @@
+# Password Security Evaluation - README
+
+## Overview
+This project evaluates password strength and explores how complexity impacts security. It involves creating passwords of varying complexity, testing them using online tools, and analyzing the feedback to identify best practices.
+
+## Contents
+- **Password_Security_Report.docx**: A detailed Word report with tables, analysis, and summaries covering:
+  - Examples of passwords with different complexity levels.
+  - Strength test results from online password checkers.
+  - Best practices and tips for strong passwords.
+  - Overview of common password attacks like brute-force and dictionary attacks.
+  - Summary of how password complexity improves security.
+
+## Tools Used
+- Online password strength checkers: Kaspersky, LastPass, and Security.org.
+- Python and `python-docx` for document generation.
+
+## Key Takeaways
+- Use passwords that are at least 12-16 characters long.
+- Combine uppercase, lowercase, numbers, and symbols.
+- Avoid dictionary words and common patterns.
+- Password managers can help store complex passwords securely.
+
