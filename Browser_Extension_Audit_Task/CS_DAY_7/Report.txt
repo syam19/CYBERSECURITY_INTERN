@@ -1,7 +1,7 @@
 Title: Browser Extension Security Audit Report
 
-Date: [Insert Date]
-Browser Used: Google Chrome / Mozilla Firefox / [Your Browser Name]
+Date: 05-06-2025
+Browser Used: Google Chrome / Mozilla Firefox 
 
 1. Opened browser's extensions manager:
    - Accessed through: Menu > Extensions (Chrome) / Add-ons and themes (Firefox)
