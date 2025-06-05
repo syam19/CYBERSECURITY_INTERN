@@ -1,0 +1,39 @@
+Title: Browser Extension Security Audit Report
+
+Date: [Insert Date]
+Browser Used: Google Chrome / Mozilla Firefox / [Your Browser Name]
+
+1. Opened browser's extensions manager:
+   - Accessed through: Menu > Extensions (Chrome) / Add-ons and themes (Firefox)
+
+2. Reviewed all installed extensions:
+   - Total extensions: 7
+   - Active extensions: 5
+   - Disabled: 2
+
+3. Checked permissions and reviews for each extension:
+   - Reviewed permissions such as "Read and change all your data on websites" or "Access clipboard".
+   - Checked user reviews for complaints about ads, pop-ups, or suspicious behavior.
+
+4. Identified suspicious/unnecessary extensions:
+   - “PDF Converter Plus” – High permissions, poor reviews, not used.
+   - “Weather Now” – Unknown developer, suspicious domain reference in reviews.
+
+5. Removed:
+   - “PDF Converter Plus”
+   - “Weather Now”
+
+6. Restarted browser and checked performance:
+   - Browser startup was slightly faster.
+   - Reduced memory usage by ~100MB.
+
+7. Research on malicious browser extensions:
+   - Can inject ads or malware into web pages.
+   - Log keystrokes, steal passwords, or track browsing.
+   - Some mimic legitimate extensions but harvest sensitive data.
+   - Example: “DataSpii” leak from Chrome and Firefox extensions (2019).
+
+8. Summary:
+   - Reviewed and cleaned up browser extensions.
+   - Improved security and performance.
+   - Learned importance of regularly checking extension permissions and reviews.
